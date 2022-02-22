@@ -23,9 +23,9 @@ class Human:
         print('R3*=K*R3={}*{}={}'.format(living_place['accidents'][self.location][self.sex], pobut[self.age], r3 := living_place['accidents'][self.location][self.sex] * pobut[self.age]))
 
         print('Ризик наразитися на смертельну небезпеку протягом року, зумовлений індивідуальним способом життя людини')
-        print('R4*=К*R4={}*{}={}'.format(living_place['illness'][self.location][self.sex], habits[self.habit], r4 := living_place['illness'][self.location][self.sex] * habits['drinking']))
+        print('R4*=К*R4={}*{}={}'.format(living_place['illness'][self.location][self.sex], habits[self.habit], r4 := living_place['illness'][self.location][self.sex] * habits[self.habit]))
 
-        print('R4**=К*R4*T={}*{}*{}={}'.format(living_place['accidents'][self.location][self.sex], hobbies[self.lifestyle], self.hours_per_year, r41 := living_place['accidents'][self.location][self.sex] * hobbies['driving'] * self.hours_per_year))
+        print('R4**=К*R4*T={}*{}*{}={}'.format(living_place['accidents'][self.location][self.sex], hobbies[self.lifestyle], self.hours_per_year, r41 := living_place['accidents'][self.location][self.sex] * hobbies[self.lifestyle] * self.hours_per_year))
 
         height = [r1, r2, r3, r4, r41]
         summary_risk = sum(height)
